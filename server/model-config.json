@@ -13,12 +13,29 @@
       "./mixins"
     ]
   },
-  "User": {
-    "dataSource": "db"
+  "user": {
+    "dataSource": "db",
+    "public": true
   },
-  "AccessToken": {
+  "userCredential": {
+    "dataSource": "db",
+    "public": true
+  },
+  "userIdentity": {
+    "dataSource": "db",
+    "public": true
+  },
+  "accessToken": {
     "dataSource": "db",
     "public": false
+  },
+  "event": {
+    "dataSource": "db",
+    "public": true
+  },
+  "invitee": {
+    "dataSource": "db",
+    "public": true
   },
   "ACL": {
     "dataSource": "db",
@@ -31,17 +48,5 @@
   "Role": {
     "dataSource": "db",
     "public": false
-  },
-  "user": {
-    "dataSource": "db",
-    "public": true
-  },
-  "event": {
-    "dataSource": "db",
-    "public": true
-  },
-  "invitee": {
-    "dataSource": "db",
-    "public": true
   }
 }

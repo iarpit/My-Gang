@@ -14,9 +14,20 @@
   },
   "session": {},
   "auth": {},
-  "parse": {},
+  "parse": {
+    "body-parser#json": {},
+    "body-parser#urlencoded": {
+      "params": {
+        "extended": true
+      }
+    }
+  },
   "routes": {},
-  "files": {},
+  "files": {
+    "loopback#static": {
+      "params": "$!../client/public"
+    }
+  },
   "final": {
     "loopback#urlNotFound": {}
   },
