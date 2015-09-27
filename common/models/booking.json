@@ -1,0 +1,33 @@
+{
+  "name": "booking",
+  "plural": "bookings",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "booking_id": {
+      "type": "string"
+    },
+    "booking_time": {
+      "type": "date",
+      "required": true
+    },
+    "track_url": {
+      "type": "string"
+    },
+    "auth_token": {
+      "type": "string",
+      "required": true
+    },
+    "locate": {
+      "type": "geopoint",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
