@@ -48,5 +48,12 @@
   "Role": {
     "dataSource": "db",
     "public": false
+  },
+  "booking": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Email": {
+    "dataSource": "myEmailDataSource",
   }
 }

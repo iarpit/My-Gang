@@ -25,6 +25,18 @@
     "inviter_id": {
       "type": "number",
       "required": true
+    },
+    "invitee_list": {
+      "type": [
+        "string"
+      ],
+      "default": []
+    },
+    "accepted_list": {
+      "type": [
+        "string"
+      ],
+      "default": []
     }
   },
   "validations": [],

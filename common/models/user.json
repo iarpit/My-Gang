@@ -28,6 +28,7 @@
       "required": true
     }
   },
+  "validations": [],
   "relations": {
     "accessTokens": {
       "type": "hasMany",
@@ -45,7 +46,6 @@
       "foreignKey": "userId"
     }
   },
-  "validations": [],
   "acls": [],
   "methods": {}
 }
