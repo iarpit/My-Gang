@@ -11,4 +11,11 @@ module.exports = function(app) {
         require('./' + name)(app);
     });
     console.log("Finished loading routes");
+
+    app.get('/', function (req, res, next) {
+        res.render('pages/index', {user: req.user,
+                                   url: req.url,
+                                   failure: req.failure
+        });
+    });
 }

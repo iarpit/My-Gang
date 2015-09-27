@@ -1,0 +1,54 @@
+extends ../layouts/layout
+block content
+  if !user
+    div.container
+      div.row
+        a#signup.center-block Signup With Ola
+        a#login.small Already Have a Account?
+        div#signup-modal.modal.fade(tabindex="-1")
+          div.modal-dialog.modal-lg
+            div.modal-content
+              div.panel.panel-primary
+                div.panel-heading
+                  button.close(type="button", data-dismiss="modal" , aria-hidden="true")&times
+                  h4.modal-title Signup With Ola
+                div.panel-body
+                  form(role='form', action='/auth/signup', method='post')
+                    .form-group
+                      label(for='name') Your Name
+                      input.form-control(type='text', name='name', placeholder='Enter your name')
+                    .form-group
+                      label(for='email') Your Email address
+                      input.form-control(type='email', name='email', placeholder='Enter your email address')
+                    .form-group
+                      label(for='password') Your Password
+                      input.form-control(type='password', name='password', placeholder='Password')
+                    .form-group
+                      label(for='phone') Your Phone Number
+                      input.col-lg-6.form-control(type='number', name='phone', placeholder='Phone Number')
+                    button.btn.btn-primary(type='submit') Sign Up With Ola
+                  br
+                  if (messages.error)
+                    p
+                      span(style="color:red")= messages.error
+        div#login-modal.modal.fade(tabindex="-1")
+          div.modal-dialog.modal-lg
+            div.modal-content
+              div.panel.panel-primary
+                div.panel-heading
+                  button.close(type="button", data-dismiss="modal" , aria-hidden="true")&times
+                  h4.modal-title Login
+                div.panel-body
+                  form(role='form', action='/auth/login', method='post')
+                    .form-group
+                      label(for='email') Your Email address
+                      input.form-control(type='email', name='email', placeholder='Enter your email address')
+                    .form-group
+                      label(for='password') Your Password
+                      input.form-control(type='password', name='password', placeholder='Password')
+                    button.btn.btn-primary.centered(type='submit') Login
+                  br
+                  if (messages.error)
+                    p
+                      span(style="color:red")= messages.error
+

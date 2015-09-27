@@ -27,7 +27,7 @@
   },
   "accessToken": {
     "dataSource": "db",
-    "public": false
+    "public": true
   },
   "event": {
     "dataSource": "db",
