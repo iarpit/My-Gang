@@ -12,8 +12,7 @@
       }
     }
   },
-  "session:after": {
-  },
+  "session": {},
   "auth": {},
   "parse": {
     "body-parser#json": {},

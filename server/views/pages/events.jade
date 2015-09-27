@@ -1,0 +1,16 @@
+extends ../layouts/layout
+
+block content
+  .row
+    .col-md-12
+      div.bs-component
+        div.list-group
+        - for (var i = 0; i < 10; ++i) {
+            div.list-group-item
+              div.row-picture
+                img.circle(src="http://lorempixel.com/56/56/people/1", alt="icon")/
+                div.row-content
+                  h4.list-group-item-heading Tile with avatar
+                  p.list-group-item-text Donec id elit non mi porta gravida at eget metus
+                  div.list-group-separator
+        - }

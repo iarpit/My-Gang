@@ -1,4 +1,4 @@
-var models = require('/Users/sparshs/topcoder/My-Gang/server/server.js').models;
+var models = require('/Users/sethiaa/Github/My-Gang/server/server.js').models;
 var distance = require('google-distance-matrix');
 var duration;
 

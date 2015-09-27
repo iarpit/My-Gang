@@ -4,19 +4,22 @@
     "connector": "memory"
   },
   "myEmailDataSource": {
-       "connector": "mail",
-       "transports": [{
-         "type": "smtp",
-         "host": "smtp.gmail.com",
-         "secure": false,
-         "port": 465,
-         "tls": {
-           "rejectUnauthorized": false
-         },
-         "auth": {
-           "user": "mygangabc@gmail.com",
-           "pass": "myG@ngaaa"
-         }
-       }]
-    }
+    "name": "myEmailDataSource",
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "smtp",
+        "host": "smtp.gmail.com",
+        "secure": false,
+        "port": 465,
+        "tls": {
+          "rejectUnauthorized": false
+        },
+        "auth": {
+          "user": "mygangabc@gmail.com",
+          "pass": "myG@ngaaa"
+        }
+      }
+    ]
+  }
 }

@@ -40,7 +40,25 @@
     }
   },
   "validations": [],
-  "relations": {},
-  "acls": [],
+  "relations": {
+    "inviter": {
+      "type": "belongsTo",
+      "model": "user",
+      "foreignKey": ""
+    },
+    "invitee": {
+      "type": "hasMany",
+      "model": "user",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
   "methods": {}
 }

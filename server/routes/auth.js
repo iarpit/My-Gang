@@ -34,7 +34,7 @@ module.exports = function(app) {
                 user.save(function (err) {});
             }
         });
-        res.redirect("/");
+        res.redirect("/events");
     });
 
     function olaLogin(req,res,user){

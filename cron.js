@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-var models = require('/Users/sparshs/topcoder/My-Gang/server/server.js').models;
+var models = require('/Users/sethiaa/Github/My-Gang/server/server.js').models;
 var Booking = models.booking;
 var THRESHOLD = 1200;
 cron = require('cron');

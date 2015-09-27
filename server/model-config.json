@@ -33,7 +33,7 @@
     "dataSource": "db",
     "public": true
   },
-  "invitee": {
+  "track": {
     "dataSource": "db",
     "public": true
   },
@@ -54,6 +54,6 @@
     "public": true
   },
   "Email": {
-    "dataSource": "myEmailDataSource",
+    "dataSource": "myEmailDataSource"
   }
 }

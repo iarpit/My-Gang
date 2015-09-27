@@ -14,5 +14,5 @@ block content
       var access_token = window.location.hash.substring(1).split("&")[0].split("=")[1];
       $.get('/auth/ola', {"access_token": access_token}, function() {
         alert("succes");
-        window.location = "http://localhost/";
+        window.location = "http://localhost/events";
       });
