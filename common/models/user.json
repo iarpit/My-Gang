@@ -23,9 +23,8 @@
       "type": "number",
       "required": true
     },
-    "country_code": {
-      "type": "number",
-      "required": true
+    "access_token": {
+      "type" : "string"
     }
   },
   "validations": [],

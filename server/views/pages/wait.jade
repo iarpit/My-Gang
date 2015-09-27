@@ -1,0 +1,18 @@
+extends ../layouts/layout
+
+block content
+  div.container.centered
+    div.row
+      div.col-md-12
+        img.circle.spinner(src="/imgs/spinner.gif")
+        br
+        p Please Wait....
+      
+
+  script.
+    if(window.location.hash)
+      var access_token = window.location.hash.substring(1).split("&")[0].split("=")[1];
+      $.get('/auth/ola', {"access_token": access_token}, function() {
+        alert("succes");
+        window.location = "http://localhost/";
+      });
